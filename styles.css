@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 30px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60px;
+    background-image: linear-gradient(blue, violet, white);
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .main-content {
+    left: 180px;
+    width: calc(100% - 20px);
+}
+
+.sidebar.active {
+    width: 175px;
+}
+
+.sidebar #dashbtn {
+    cursor: pointer;
+}
+
+.sidebar #dashbtn {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar #dashbtn .main-tooltip {
+    position: absolute;
+    left: 100px;
+    top: 2.5%;
+    transform: translate(-45%, -50%);
+    box-shadow: 0 0.5rem 0.8rem hsl(0, 0%, 77%);
+    border-radius: .6rem;
+    padding: 0 .5rem;
+    line-height: 1.8rem;
+    z-index: 20;
+    opacity: 0;
+}
+
+.sidebar #dashbtn:hover .main-tooltip {
+    opacity: 1;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    line-height: 50px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.sidebar ul li a:hover {
+    background-color: hsl(0, 0%, 91%);
+    color: black;
+}
+
+.sidebar ul li a:active {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+
+.sidebar .dash-item {
+    opacity: 0;
+}
+
+.sidebar.sidebar.active .dash-item {
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translate(-45%, -50%);
+    box-shadow: 0 0.5rem 0.8rem hsl(0, 0%, 88%);
+    border-radius: .6rem;
+    padding: 0 .5rem;
+    line-height: 1.8rem;
+    z-index: 20;
+    opacity: 0;
+}
+
+.sidebar ul li:hover .tooltip{
+    opacity: 1;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+.sidebar.sidebar.active #dashbtn .main-tooltip {
+    display: none;
+}
+
+.main-content {
+    position: relative;
+    background-color: white;
+    min-height: 100vh;
+    top: 0;
+    left: 60px;
+    transition: all 0.5s ease;
+    width: calc(100% - 60px);
+    padding: 0.5rem;
+}
