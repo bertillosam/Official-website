@@ -124,16 +124,16 @@
     left: 60px;
     transition: all 0.5s ease;
     width: calc(100% - 60px);
-    padding: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .main-content .header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 10rem;
+    justify-content: right;
     padding-left: 3rem;
     padding-right: 3rem;    
 }
@@ -142,6 +142,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1rem;
 }
 
 .main-content .header .leftheader{
@@ -149,12 +150,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80%;    
+    width: 80%; 
 }
 
 .main-content .header .searchicon {
     width: 20px;
     margin-top: 2px;
+    cursor: pointer;
 }
 
 .main-content .header .mypicture {
@@ -172,3 +174,66 @@
     color: black;
     font-weight: bold;
 }
+
+.headertwo {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;    
+}
+.headsearch {
+    width: 35rem;
+    border-radius: 20rem;
+}
+
+.mypicture2 {
+    width: 60px;
+    border-radius: 100%;
+    box-shadow: 0 0.5rem 0.5rem hsl(0, 0%, 77%);
+}
+
+.greeting {
+    font-size: smaller;
+}
+
+.pname {
+    font-weight: bold;
+}
+
+.usergreeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.headbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    gap: 2rem;
+}
+
+.hbutton {
+    padding: 0.8rem;
+    border-radius: 25rem;
+    width: 30rem;
+    background-color: hsl(216, 100%, 74%);
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+.hbutton:hover {
+    background-color: hsl(216, 100%, 66%);
+}
+.hbutton:active {
+    background-color: hsl(216, 86%, 86%);
+}
+
+
+.projects {
+    background-color: hsl(198, 37%, 89%);
+    margin: 0;
+    box-shadow: 0 0 5px 0.2px black;
+    max-height: ;
