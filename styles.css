@@ -126,3 +126,49 @@
     width: calc(100% - 60px);
     padding: 0.5rem;
 }
+
+.main-content .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;    
+}
+
+.main-content .header .rightheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-content .header .leftheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;    
+}
+
+.main-content .header .searchicon {
+    width: 20px;
+    margin-top: 2px;
+}
+
+.main-content .header .mypicture {
+    width: 40px;
+    border-radius: 100%;
+    box-shadow: 0 0.5rem 0.8rem hsl(0, 0%, 83%);
+}
+
+.main-content .header ul li {
+    list-style-type: none;
+}
+
+.main-content .header .myname {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
