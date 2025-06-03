@@ -102,6 +102,7 @@
     line-height: 1.8rem;
     z-index: 20;
     opacity: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 .sidebar ul li:hover .tooltip{
@@ -134,6 +135,7 @@
     justify-content: right;
     align-items: center;
     justify-content: right;
+    gap: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;    
 }
@@ -147,10 +149,17 @@
 
 .main-content .header .leftheader{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80%; 
+    width: 40%;
+}
+
+.headsearch {
+    width: 25rem;
+    border-radius: 20rem;
+    background-color: hsl(0, 0%, 95%);
+    border-style:none;
+    box-shadow: 0 0.1rem 0.1rem hsl(0, 0%, 39%);
 }
 
 .main-content .header .searchicon {
@@ -179,10 +188,6 @@
     display: flex;
     justify-content: space-between;
     padding: 3rem;    
-}
-.headsearch {
-    width: 35rem;
-    border-radius: 20rem;
 }
 
 .mypicture2 {
@@ -233,7 +238,18 @@
 
 
 .projects {
+    display: flex;
     background-color: hsl(198, 37%, 89%);
     margin: 0;
+    height: 100vh;
     box-shadow: 0 0 5px 0.2px black;
-    max-height: ;
+    padding: 5rem;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 75%;
+    border-style: solid;
+}
